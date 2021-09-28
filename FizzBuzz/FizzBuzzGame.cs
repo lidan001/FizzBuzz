@@ -19,11 +19,11 @@ namespace FizzBuzz
                 var answer = "";
                 if(Check(3,i))
                 {
-                    answer += "Fizz";
+                    answer += threeTimesString;
                 }
                 if(Check(5,i))
                 {
-                    answer += "Buzz";
+                    answer += fiveTimesString;
                 }
                 yield return answer;
             }
