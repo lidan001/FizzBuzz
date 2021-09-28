@@ -19,7 +19,7 @@ namespace FizzBuzz.Tests
             {
                 "","","Fizz","","Buzz",
                 "Fizz","","","Fizz","Buzz",
-                "","Fizz","","","FizzBuzz"
+                "","Fizz","Fizz","","FizzBuzz"
             };
             for(int i=0;i<answers.Count;i++)
             {

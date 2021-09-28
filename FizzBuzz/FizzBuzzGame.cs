@@ -17,16 +17,30 @@ namespace FizzBuzz
             for (int i = 1; i <= PlayerCount; i++)
             {
                 var answer = "";
-                if(i%3==0)
+                if(Check(3,i))
                 {
                     answer += "Fizz";
                 }
-                if(i%5==0)
+                if(Check(5,i))
                 {
                     answer += "Buzz";
                 }
                 yield return answer;
             }
         }
+
+        private bool Check(int n,int i)
+        {
+            if (i % n == 0)
+            {
+                return true;
+            }
+            string str = i.ToString();
+            if(str.Contains(n+""))
+            {
+                return true;
+            }
+            return false;
+        }  
     }
 }
